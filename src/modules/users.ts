@@ -11,9 +11,10 @@ export const getUsers = async (c:Context<Env>): Promise<TypedResponse> => {
   return c.jsonT(result, 200)
 }
 
-export const getUser = async (c:Context<Env>): Promise<TypedResponse> => {
+export const getUser = async (c:Context<Env>): Promise<Response | TypedResponse> => {
   const db = c.get('db')
   const id = parseInt(c.req.param('id'), 10)
+  if (Number.isNaN(id)) return c.text('Invalid ID', 500)
   const result = await db.select().from(users).where(eq(users.id, id)).all()
 
   return c.jsonT(result, 200)
