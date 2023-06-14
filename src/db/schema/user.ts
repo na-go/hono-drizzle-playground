@@ -17,5 +17,3 @@ export const insertUserSchema = createInsertSchema(users, {
   email: (schema) => schema.email.email(),
 });
 
-export type User = InferModel<typeof users>
-export type InsertUser = InferModel<typeof users, 'insert'>
