@@ -1,8 +1,0 @@
-name = "music-player-d1-drizzle"
-main = "src/index.ts"
-compatibility_date = "2023-06-14"
-
-[[d1_databases]]
-binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "d1-example"
-database_id = "aaff180a-3b23-4d9b-af60-881706561e0c"
