@@ -1,6 +1,5 @@
 import { sqliteTable, text, integer, uniqueIndex } from 'drizzle-orm/sqlite-core'
 
-import { InferModel } from "drizzle-orm"
 import { createInsertSchema } from 'drizzle-zod';
 
 export const users = sqliteTable('users', {
