@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import { Env } from "../type";
+import { Env } from "./types/type";
 import { getUser, getUsers, postUser } from "./modules/users";
 import { drizzle } from "drizzle-orm/d1";
 
