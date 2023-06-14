@@ -1,5 +1,9 @@
 # hono-drizzle-playground
 
+## 最初に
+まずD1をworkerが使える環境で始めてください。
+その上でwrangler.example.txtをwrangler.tomlに変更して始めてください（publicにする上でコイツラを隠す方法がすぐわかんなかった）
+
 ```bash
 npm install
 npm run dev
