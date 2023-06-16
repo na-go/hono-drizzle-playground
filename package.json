@@ -3,8 +3,8 @@
     "start": "wrangler dev",
     "dev": "wrangler dev --local --persist",
     "generate": "drizzle-kit generate:sqlite --out migrations --schema src/db/schema/*",
-    "migrate": "wrangler d1 migrations apply d1-example --local",
-    "production-migrate": "wrangler d1 migrations apply d1-example",
+    "migrate": "wrangler d1 migrations apply 任意の名前 --local",
+    "production-migrate": "wrangler d1 migrations apply 任意の名前",
     "publish": "wrangler publish"
   },
   "dependencies": {

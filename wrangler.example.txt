@@ -1,8 +1,0 @@
-name = "workerの名前"
-main = "src/index.ts"
-compatibility_date = "2023-06-14"
-
-[[d1_databases]]
-binding = "DB" # i.e. available in your Worker on env.DB
-database_name = "好きな名前"
-database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
